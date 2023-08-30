@@ -18,3 +18,8 @@ var verdadero_o_falso = true;
 var numero_falso = "33.4";
 
 console.log(String(numero_falso)+7);
+
+console.log(typeof numero_entero);
+console.log(typeof cadena_texto);
+console.log(typeof verdadero_o_falso);
+console.log(typeof numero_entero);
