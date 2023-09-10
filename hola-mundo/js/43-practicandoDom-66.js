@@ -1,4 +1,4 @@
-'use estrict'
+'use strict'
 
 //DOM Document Object Model
 
@@ -83,3 +83,6 @@ console.log(claseRojo);
 
 var etiqueta = document.querySelector("div");
 console.log(etiqueta);
+
+var buscar = document.querySelectorAll("p");
+console.log(buscar[4]);
