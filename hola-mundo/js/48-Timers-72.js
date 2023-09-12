@@ -45,7 +45,7 @@ var start = document.querySelector("#start");
     start.addEventListener('click', function(){
         alert("Has empezado intervalo en boocle!!!")
         intervalo();//llamamos a funcion para empezar el boocle
-        cl
+    
     });
 
 });
