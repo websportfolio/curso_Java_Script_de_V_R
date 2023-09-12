@@ -25,6 +25,9 @@ window.addEventListener('load',function(){
         //Evento click 
         boton.addEventListener('click', function(){
             cambiarColor();
+          //Operador this solo dentro  
+        console.log(this);
+        this.style.border = "10px solid black"
         });
 
         //Mouseover
