@@ -31,11 +31,12 @@ getUsuarios().then(function(data){
 /////////////////////
     .then(data => data.json())
     .then(user => {
-        mostrarJanet(user.data);
-
-        
+        mostrarJanet(user.data);    
     })
-       
+     .catch(error =>{
+        console.log(error + "pagina no carga!!!");
+        alert("Error en las peticiones!!!");
+     });  
 
 function getUsuarios(){
     return fetch('https://reqres.in/api/users');
