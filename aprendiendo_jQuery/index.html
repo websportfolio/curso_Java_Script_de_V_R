@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/04-selector -de-atributo-94.js"></script>
+    <script src="js/05-Find_y_parent-95.js"></script>
 
     <style>
         .zebra{
@@ -13,6 +13,13 @@
         }
         .grande{
             font-size: 40px;
+        }
+        .margen-superior{
+            display: block;
+            margin-top: 45px;     
+        }
+        .resaltado{
+            border-bottom: 2px solid green;
         }
     </style>
 
@@ -31,5 +38,15 @@
     <p id="amarillo" class="zebra">Practicando con selectores</p>
     <p id="verde" class="sin_borde">Quiero ser un parrafo verde</p>
     <p class="zebra">Soy un parrafo blanco</p>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="elemento2">Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
+
 </body>
 </html>
