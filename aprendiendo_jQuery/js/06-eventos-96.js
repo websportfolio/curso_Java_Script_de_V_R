@@ -6,4 +6,8 @@ $(document).ready(function(){
         //sobre esta caja voy a cambiar..
         $(this).css('background', 'red');
     })
+
+    caja.mouseout(function(){
+        $(this).css('background','green')
+    })
 });
