@@ -17,7 +17,9 @@ $(document).ready(function(){
         //$('#caja').hide('fast');
         //$('#caja').fadeOut('slow');
        // $('#caja').fadeTo('slow', 0);
-       caja.slideUp('slow');
+       caja.slideUp('slow',function(){  //añadimos como segundo parametro un callback leccion 104
+        console.log('Cartel ocultado')
+       });
     })
     //////////////todo en uno////////////////////////
 
