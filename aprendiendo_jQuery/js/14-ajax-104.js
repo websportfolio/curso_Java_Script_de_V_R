@@ -16,12 +16,36 @@ $(document).ready(function(){
             name: $('input[name="name"]').val(),
             web: $('input[name="web"]').val()
         };
+        /*
         console.log(usuario);
         $.post($(this).attr("action"), usuario, function(response){
     console.log(response)
         }).done(function(){
             alert("Usuario añadido correctamente");
         })
+        */
+        //Leccion 108. Metodo $.ajax mandando datos
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr("action"),
+            data: usuario,
+            beforeSend: function(){
+                console.log("Enviando usuario...");
+            },
+            //en el caso que todo va bien
+            success: function(response){
+                console.log(response)
+            },
+            //si no q devuelve error
+            error: function(){
+                console.log('Ha ocurrido un error')
+            },
+            //ponemos funcion de timeout
+            timeout:1111
+
+            
+        });
+
         return false;
     })
 
