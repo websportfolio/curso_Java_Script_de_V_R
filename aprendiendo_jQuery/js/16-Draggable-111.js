@@ -39,4 +39,7 @@ $(document).ready(function(){
         $('.mostrar-efectos').toggle('shake','slow');
     })
 
+    //Leccion 117: Tooltip
+    $(document).tooltip();
+
 })
