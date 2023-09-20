@@ -6,7 +6,15 @@ $(document).ready(function(){
     //Leccion 112. Resizable--> Redimencionar elemento
     $('.elemento').resizable();
 
-    //Leccion 113. Selectable --> metodo seleccionable
+    //Leccion 113. Selectable --> metodo seleccionable seleccionar elementos
 
-    $('.lista-seleccionable').selectable();
+   // $('.lista-seleccionable').selectable();
+
+    //Leccion114. metodo short ordena
+
+    $('.lista-seleccionable').sortable({
+        update: function(event,ui){
+            console.log("Ha cambiado la lista");
+        }
+    });
 })
