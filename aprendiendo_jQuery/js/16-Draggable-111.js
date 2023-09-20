@@ -17,4 +17,13 @@ $(document).ready(function(){
             console.log("Ha cambiado la lista");
         }
     });
+
+    // Leccion 115. Droppable
+    $('#elemento-movido').draggable();
+    $('#area').droppable({
+        drop: function(){
+            console.log("Has soltado algo dentro del area!")
+        }
+    });
+
 })
