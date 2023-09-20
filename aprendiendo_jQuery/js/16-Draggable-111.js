@@ -5,4 +5,8 @@ $(document).ready(function(){
 
     //Leccion 112. Resizable--> Redimencionar elemento
     $('.elemento').resizable();
+
+    //Leccion 113. Selectable --> metodo seleccionable
+
+    $('.lista-seleccionable').selectable();
 })
