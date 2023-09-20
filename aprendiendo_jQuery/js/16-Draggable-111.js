@@ -26,4 +26,17 @@ $(document).ready(function(){
         }
     });
 
+    //Leccion 116: Efectos de jQuery UI
+
+    $('#mostrar').click(function(){
+       // $('.mostrar-efectos').toggle('fade');
+        //$('.mostrar-efectos').toggle('blind');
+        //$('.mostrar-efectos').toggle('slide');
+        //$('.mostrar-efectos').toggle('drop');
+        //$('.mostrar-efectos').toggle('fold');
+        //$('.mostrar-efectos').toggle('puff');
+        //$('.mostrar-efectos').toggle('scale');
+        $('.mostrar-efectos').toggle('shake','slow');
+    })
+
 })
