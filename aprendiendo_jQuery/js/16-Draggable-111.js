@@ -42,4 +42,10 @@ $(document).ready(function(){
     //Leccion 117: Tooltip
     $(document).tooltip();
 
+    //Leccion 118. Dialog popup
+    $('#lanzar-popup').click(function(){
+        $('#popup').dialog();
+    })
+    
+
 })
