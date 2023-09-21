@@ -50,6 +50,10 @@ $(document).ready(function(){
     //Leccion 119. Datapiquer calendario
 
     $('#calendario').datepicker();
+
+    //Leccion 120. Tabs Pestañas
+
+    $('#pestanas').tabs();
     
 
 })
