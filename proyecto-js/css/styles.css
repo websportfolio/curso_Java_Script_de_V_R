@@ -67,4 +67,42 @@ body{
     padding-left: 30px;
     padding-right: 30px;
 }
+#posts{
+    width: 60%;
+    float: left;
+    font-family:  Helvetica, Arial;
+}
+.post{
+    padding: 5px;
+}
+
+.post h2{
+    font-size: 30px;
+    color:#333;
+}
+.post .date{
+    display: block;
+    color: grey;
+    margin-top: 5px;
+}
+.post p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+}
+.buttom-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background: #235E3D;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
+    
+}
+
 
