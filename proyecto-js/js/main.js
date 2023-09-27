@@ -78,4 +78,26 @@ $('#posts').append(post);
         }, 500);
         return false;
       });
+      //LOgin Falso
+      $('#login form').submit(function(){
+        var for_name = $('#form_name').val();
+
+        localStorage.setItem("for_name", for_name);
+      });
+      var for_name = localStorage.getItem("for_name");
+
+      if(for_name != null && for_name != "undefined"){
+        var about_parrafo = $('#about p');
+
+          $("#about p").html("<br><strong>Bienbenido, "+for_name+'</strong>');
+          about_parrafo.append("<a href='#' id='logout'>Cerrar secion</a>");
+
+          $('#login').hide();
+
+          $('#logout').click(function(){
+              localStorage.clear();
+              location.reload();
+          })
+      }
+      
 })
