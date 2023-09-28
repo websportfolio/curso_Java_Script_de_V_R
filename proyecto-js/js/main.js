@@ -109,5 +109,18 @@ $('#posts').append(post);
       if(window.location.href.indexOf('about') >-1){
         $("#acordeon").accordion();
       }
+
+      //Reloj
+      if(window.location.href.indexOf('reloj') >-1){
+        //es un boocle ejecuta cada vez
+        setInterval(function(){
+            //ejecuta ese codigo
+            var reloj = moment().format(' h:mm:ss');
+
+            $('#reloj').html(reloj);
+        }, 1000)
+          
+        
+      }
       
 })
