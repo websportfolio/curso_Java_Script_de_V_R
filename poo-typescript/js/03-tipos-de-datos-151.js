@@ -1,5 +1,7 @@
 //string
+//Leccion 152. multiples tipos de datos
 var cadena = "victorrobles.es";
+cadena = 44;
 //number
 var numero = 12;
 //Booleano

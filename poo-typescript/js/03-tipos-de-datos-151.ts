@@ -1,6 +1,9 @@
 
 //string
-let cadena: string = "victorrobles.es";
+//Leccion 152. multiples tipos de datos
+let cadena: string | number = "victorrobles.es";
+
+cadena = 44;
 
 //number
 let numero: number = 12;
