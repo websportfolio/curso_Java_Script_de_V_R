@@ -1,9 +1,11 @@
+//Leccion 153.  tipos de datos personalizados
+type alfanumerico = string | number;
 
 //string
-//Leccion 152. multiples tipos de datos
-let cadena: string | number = "victorrobles.es";
 
-cadena = 44;
+let cadena: alfanumerico = "victorrobles.es";
+
+cadena = 55;
 
 //number
 let numero: number = 12;
