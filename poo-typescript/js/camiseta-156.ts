@@ -16,6 +16,14 @@ class Camiseta{
     private precio: number;
   
 //Metodos (funciones o acciones del objeto)
+//Leccion 156. Constructor
+constructor(color, modelo, marca, talla, precio){
+    this.color = color;
+    this.modelo = modelo;
+    this.marca = marca;
+    this.talla = talla;
+    this.precio = precio;
+}
 //metodo para el color que me llega
 public cambiarColor(color){
     this.color = color;
@@ -27,9 +35,9 @@ public getColor(){
 
 }
 
-var camiseta = new Camiseta();
+var camiseta = new Camiseta("rojo", "manga larga", "nike", "L", 14);
 //llamo para cambiar color
-camiseta.cambiarColor("rojo");
+camiseta.cambiarColor("Rojo");
 //Para mostrar color
 //camiseta.getColor();
 /*
@@ -41,8 +49,8 @@ camiseta.precio = 10;  */
 
 //console.log(camiseta);
 
-var playera = new Camiseta();
-playera.cambiarColor("azul")
+//var playera = new Camiseta();
+//playera.cambiarColor("azul")
 /*
 playera.color = "Azul";
 playera.modelo = "Manga Corta";
@@ -50,5 +58,6 @@ playera.marca = "Adidas";
 playera.talla = "S";
 playera.precio = 20;  */
 
-console.log(camiseta.getColor(), playera);
+//console.log(camiseta.getColor(), playera);
+console.log(camiseta);
 
