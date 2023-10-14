@@ -1,4 +1,5 @@
 //Clase (molde del objeto)
+//leccion 155
 var Camiseta = /** @class */ (function () {
     function Camiseta() {
     }

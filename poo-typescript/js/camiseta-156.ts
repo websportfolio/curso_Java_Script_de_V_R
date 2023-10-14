@@ -1,4 +1,5 @@
 //Clase (molde del objeto)
+//leccion 155
 class Camiseta{
     //Propiedades (caracteristicas del objeto)
     //Variables
