@@ -1,8 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Camiseta = void 0;
 //Clase (molde del objeto)
 //leccion 155
 var Camiseta = /** @class */ (function () {
     //Metodos (funciones o acciones del objeto)
-    //Leccion 156. Constructor
+    //Leccion 156. Constructor para dar el valor a la clase
     function Camiseta(color, modelo, marca, talla, precio) {
         this.color = color;
         this.modelo = modelo;
@@ -20,9 +23,10 @@ var Camiseta = /** @class */ (function () {
     };
     return Camiseta;
 }());
-var camiseta = new Camiseta("rojo", "manga larga", "nike", "L", 14);
+exports.Camiseta = Camiseta;
+//var camiseta = new Camiseta("rojo", "manga larga", "nike", "L", 14);
 //llamo para cambiar color
-camiseta.cambiarColor("Rojo");
+//camiseta.cambiarColor("Rojo");
 //Para mostrar color
 //camiseta.getColor();
 /*
@@ -41,4 +45,4 @@ playera.marca = "Adidas";
 playera.talla = "S";
 playera.precio = 20;  */
 //console.log(camiseta.getColor(), playera);
-console.log(camiseta);
+//console.log(camiseta);

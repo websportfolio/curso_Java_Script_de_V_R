@@ -1,6 +1,6 @@
 //Clase (molde del objeto)
 //leccion 155
-class Camiseta{
+export class Camiseta{
     //Propiedades (caracteristicas del objeto)
     //Variables
    /* public color: string;
@@ -16,7 +16,7 @@ class Camiseta{
     private precio: number;
   
 //Metodos (funciones o acciones del objeto)
-//Leccion 156. Constructor
+//Leccion 156. Constructor para dar el valor a la clase
 constructor(color, modelo, marca, talla, precio){
     this.color = color;
     this.modelo = modelo;
@@ -35,9 +35,9 @@ public getColor(){
 
 }
 
-var camiseta = new Camiseta("rojo", "manga larga", "nike", "L", 14);
+//var camiseta = new Camiseta("rojo", "manga larga", "nike", "L", 14);
 //llamo para cambiar color
-camiseta.cambiarColor("Rojo");
+//camiseta.cambiarColor("Rojo");
 //Para mostrar color
 //camiseta.getColor();
 /*
@@ -59,5 +59,5 @@ playera.talla = "S";
 playera.precio = 20;  */
 
 //console.log(camiseta.getColor(), playera);
-console.log(camiseta);
+//console.log(camiseta);
 
