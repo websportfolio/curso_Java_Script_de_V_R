@@ -1,5 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+//import {Camiseta} from './camiseta-156';
 var Main = /** @class */ (function () {
     function Main() {
         console.log("Aplicacion JS cargada!!");
@@ -7,4 +6,4 @@ var Main = /** @class */ (function () {
     return Main;
 }());
 //Instancia
-var main = new Main();
+//var main = new Main();
