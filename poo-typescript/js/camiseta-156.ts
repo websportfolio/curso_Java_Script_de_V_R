@@ -31,6 +31,27 @@ interface CamisetaBase{
     }
 }
 
+//Leccion 160 . Herencia
+
+class Sudadera extends Camiseta{
+    public capucha: boolean;
+
+    setCapucha(capucha: boolean){
+        this.capucha = capucha;
+    }
+    getCapucha():boolean{
+        return this.capucha;
+    }
+}
+
+var sudadera_nike = new Sudadera("azul","para calle", "nike","S", 35);
+sudadera_nike.setCapucha(true);
+sudadera_nike.setColor("Gris Jaspeado");
+
+console.log(sudadera_nike);
+
+
+
 var camiseta = new Camiseta("1","2","3","4",20);
 console.log(camiseta);
 
