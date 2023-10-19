@@ -1,6 +1,11 @@
-
+//Leccion 159. Herencias 
+//Interface
+interface CamisetaBase{
+    setColor(color);
+    getColor();
+}
 //Clase(Molde del objeto)
-class Camiseta{
+ class Camiseta implements CamisetaBase{
     //Propiedades (caracteristicas del objeto)
     private color: string;
     private modelo: string;
@@ -26,11 +31,6 @@ class Camiseta{
     }
 }
 
-var camiseta = new Camiseta("rojo", "manga larga", "nike","L", 19);
-camiseta.setColor("Rojo");
-
-
-
-
-
+var camiseta = new Camiseta("1","2","3","4",20);
 console.log(camiseta);
+

@@ -16,6 +16,5 @@ var Camiseta = /** @class */ (function () {
     };
     return Camiseta;
 }());
-var camiseta = new Camiseta("rojo", "manga larga", "nike", "L", 19);
-camiseta.setColor("Rojo");
+var camiseta = new Camiseta("1", "2", "3", "4", 20);
 console.log(camiseta);
