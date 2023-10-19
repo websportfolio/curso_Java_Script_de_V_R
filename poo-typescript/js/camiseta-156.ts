@@ -4,7 +4,18 @@ interface CamisetaBase{
     setColor(color);
     getColor();
 }
+
+// Decorador
+function estampar(logo: string){
+    return function(target: Function){
+        target.prototype.estampacion = function():void{
+            console.log("Camiseta estampada con el logo de "+ logo);
+        }
+    }
+}
+
 //Clase(Molde del objeto)
+@estampar('Gucci Lala')
  class Camiseta implements CamisetaBase{
     //Propiedades (caracteristicas del objeto)
     private color: string;
@@ -44,6 +55,9 @@ class Sudadera extends Camiseta{
     }
 }
 
+
+////////////////////////
+
 var sudadera_nike = new Sudadera("azul","para calle", "nike","S", 35);
 sudadera_nike.setCapucha(true);
 sudadera_nike.setColor("Gris Jaspeado");
@@ -53,5 +67,7 @@ console.log(sudadera_nike);
 
 
 var camiseta = new Camiseta("1","2","3","4",20);
+
 console.log(camiseta);
+camiseta.estampacion();
 
