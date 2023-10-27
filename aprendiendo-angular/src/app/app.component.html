@@ -1,6 +1,12 @@
-<div>
+<div [ngStyle]="{
+  'background': config.fondo,
+  'padding': '20px',
+  'border': '5px solid black',
+  'border-color': config.color
+
+}">
   <h1>Bienvedido al {{title}}</h1>
-  <p>Vamos a aprender Angular juntos</p>
+  <p>{{descripcion}}</p>
 
   <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videjuegos">Ocultar</button>
   <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videjuegos">Mostrar</button>
