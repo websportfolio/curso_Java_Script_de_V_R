@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title = 'Master de Java Script y Angular!';
+  public mostrar_videjuegos: boolean = true;
+
+  ocultarVideojuegos(value: boolean){
+    this.mostrar_videjuegos = value;
+  }
+
 }
