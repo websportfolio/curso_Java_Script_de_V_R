@@ -12,8 +12,10 @@ export class ZapatillasComponent implements OnInit{
     public marcas: String[];
     public color : string;
     public mi_marca: string;
+    public indice: any;
 
     constructor(){
+
       this.mi_marca = 'sketchers'
       this.color = 'blue';
       this.marcas = new Array();
@@ -54,6 +56,11 @@ export class ZapatillasComponent implements OnInit{
 
     addMarca(){
       this.marcas.push(this.mi_marca);
+    }
+
+    borrarMarca(index:any){
+        //delete this.marcas[index];
+        this.marcas.splice(index, 1)
     }
 
 }
