@@ -23,7 +23,7 @@ export class ZapatillasComponent implements OnInit{
             new Zapatilla('Nike Air', 'Nike','Red',40, true),
             new Zapatilla('Reebok Classic', 'Reebok','Blanco',80, true),
             new Zapatilla('Reebok Spartan', 'Reebok','Black',180, true),
-            new Zapatilla('Nice Runner', 'Nike','Black',60, true),
+            new Zapatilla('Nike Runner', 'Nike','Black',60, true),
             new Zapatilla('Adidas Yizzy', 'Adidas','Grey',130, false)
         ];
     }
