@@ -8,6 +8,9 @@ import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
 
 import { FormsModule} from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+
+import { routing, AppRoutingProviders } from './app.routing';
 
 
 @NgModule({
@@ -16,14 +19,18 @@ import { FormsModule} from '@angular/forms';
     VideojuegoComponent,
     ZapatillasComponent,
     CursosComponent,
+    HomeComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
-  providers: [],
+  providers: [
+    AppRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
